@@ -77,7 +77,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>IF EXIST "C:\Program Files (x86)\Steam\steamapps\common\ULTRAKILL\BepInEx\UMM Mods\" (
-copy "$(TargetPath)" "C:\Program Files (x86)\Steam\steamapps\common\ULTRAKILL\BepInEx\UMM Mods\$(AssemblyName).dll"
+copy "$(TargetPath)" "C:\Program Files (x86)\Steam\steamapps\common\ULTRAKILL\BepInEx\UMM Mods\FastPunch\$(AssemblyName).dll"
 )</PostBuildEvent>
   </PropertyGroup>
 </Project>

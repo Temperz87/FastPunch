@@ -10,11 +10,12 @@ using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-[UKPlugin("tempy.fastpunch", "Fast Punch", "1.0.0", "Binds the punch key to the Feedbacker and the change fist key to the KnuckleBlaster", false, true)]
+[UKPlugin("tempy.fastpunch", false, true)]
 public class Plugin : UKMod
 {
     private static Dictionary<Punch, Traverse> allPunches = new Dictionary<Punch, Traverse>();
     private static Harmony harmony;
+    
     public override void OnModLoaded()
     {
         harmony = new Harmony("tempy.fastpunch");
